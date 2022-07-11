@@ -12,4 +12,4 @@ RUN apk add --no-cache ca-certificates tzdata
 COPY --from=builder /src/bin /bin
 COPY --from=builder /src/dockerfiles/app/start.sh start.sh
 USER nobody:nobody
-ENTRYPOINT [ "sh", "./start.sh" ]
+ENTRYPOINT [ "/bin/app" ]

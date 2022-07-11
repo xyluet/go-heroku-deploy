@@ -19,7 +19,7 @@ func main() {
 	// config, err := loadConfig(".")
 	// must(err)
 
-	port := os.Getenv("QQQ")
+	port := os.Getenv("PORT")
 	fmt.Println(port)
 
 	// fmt.Println(config)
